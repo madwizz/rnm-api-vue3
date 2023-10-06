@@ -1,8 +1,10 @@
 <script>
 import CharacterGallery from './components/CharacterGallery.vue';
+import Header from './components/Header.vue';
 
 export default {
   components: {
+    Header,
     CharacterGallery
   }
 }
@@ -10,6 +12,7 @@ export default {
 
 <template>
   <div class="page">
+    <Header />
     <CharacterGallery />
   </div>
 </template>

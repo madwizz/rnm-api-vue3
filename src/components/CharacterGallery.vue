@@ -25,9 +25,13 @@ export default {
   },
   methods: {
     async getCharacters() {
-      const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${this.currentPage}`);
-      this.totalPages = response.data.info.pages;
-      this.characters.push(...response.data.results.slice(0, 9));
+      try {
+        const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${this.currentPage}`);
+        this.totalPages = response.data.info.pages;
+        this.characters.push(...response.data.results.slice(0, 9));
+      } catch (error) {
+        console.error('Failed fetching characters', error);
+      }
     },
     onScroll() {
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 5) {
@@ -51,29 +55,29 @@ export default {
 }
 </script>
 
-<style>
-.character-gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
-}
+<style scoped lang="scss">
+  .character-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
+    @media (min-width: 768px) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      & {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
   ::-webkit-scrollbar {
     display: none;
   }
 
-@media (min-width: 768px) {
-  .character-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .character-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 </style>
 

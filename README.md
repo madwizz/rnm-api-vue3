@@ -1,12 +1,12 @@
 <h2>Overview:<h2/>
   The Character Gallery Viewer is a Vue-based application designed to display characters from the Rick and Morty show. It fetches data from the open API provided by https://rickandmortyapi.com/ and showcases each character's thumbnail, name, status, creation time, and location. The gallery also implements an infinite scrolling feature, loading more characters as the user scrolls down.
 
-# Structure:
+<h2>Structure:<h2/>
   The application consists of three main components:
 
-## App.vue - This is the root component that encompasses the entire application.
-## CharacterGallery.vue - This component fetches characters from the API and displays them using the CharacterCard component. It is also responsible for the infinite scrolling feature.
-## CharacterCard.vue - This component presents individual character details based on the passed-in character prop.
+<h3>App.vue<h3/> - This is the root component that encompasses the entire application.
+<h3>CharacterGallery.vue<h3/> - This component fetches characters from the API and displays them using the CharacterCard component. It is also responsible for the infinite scrolling feature.
+<h3>CharacterCard.vue<h3/> - This component presents individual character details based on the passed-in character prop.
 
 # Component Breakdown:
 

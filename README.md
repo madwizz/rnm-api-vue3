@@ -77,7 +77,7 @@ Before starting the installation process, make sure you have the following tools
 1. **Clone the Repository**
    
    ```bash
-   git clone https://github.com/your-username/rick-and-morty-gallery.git
+   git clone https://github.com/madwizz/rick-and-morty-gallery.git
 
 2. **Navigate to the project directory:**
    

@@ -1,20 +1,20 @@
-### Overview:
+# Overview:
   The Character Gallery Viewer is a Vue-based application designed to display characters from the Rick and Morty show. It fetches data from the open API provided by https://rickandmortyapi.com/ and showcases each character's thumbnail, name, status, creation time, and location. The gallery also implements an infinite scrolling feature, loading more characters as the user scrolls down.
 
-### Structure:
+# Structure:
   The application consists of three main components:
 
-# App.vue - This is the root component that encompasses the entire application.
-# CharacterGallery.vue - This component fetches characters from the API and displays them using the CharacterCard component. It is also responsible for the infinite scrolling feature.
-# CharacterCard.vue - This component presents individual character details based on the passed-in character prop.
+### App.vue - This is the root component that encompasses the entire application.
+### CharacterGallery.vue - This component fetches characters from the API and displays them using the CharacterCard component. It is also responsible for the infinite scrolling feature.
+### CharacterCard.vue - This component presents individual character details based on the passed-in character prop.
 
-### Component Breakdown:
+# Component Breakdown:
 
-# App.vue:
+### App.vue:
   Components Used: CharacterGallery
   Template Structure: The main page container wrapping the CharacterGallery component.
 
-# CharacterGallery.vue:
+### CharacterGallery.vue:
   Components Used: CharacterCard
   
   Data Properties:
@@ -31,7 +31,7 @@
     created(): Invoked when the component is created. Fetches the initial set of characters and adds a scroll event listener.
     beforeDestroy(): Removes the scroll event listener before the component is destroyed.
 
-# CharacterCard.vue:
+### CharacterCard.vue:
   Props: character: An object containing details of the character.
   
   Template Structure: A card layout displaying the character's image, name, status, creation date, and location.

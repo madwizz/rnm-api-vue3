@@ -28,7 +28,7 @@ export default {
       try {
         const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${this.currentPage}`);
         this.totalPages = response.data.info.pages;
-        this.characters.push(...response.data.results.slice(0, 9));
+        this.characters.push(...response.data.results.slice(0, 8));
       } catch (error) {
         console.error('Failed fetching characters', error);
       }
@@ -71,6 +71,12 @@ export default {
     @media (min-width: 1024px) {
       & {
         grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1100px) {
+      & {
+        grid-template-columns: repeat(4, 1fr);
       }
     }
   }

@@ -11,10 +11,12 @@
 # Component Breakdown:
 
 ### App.vue:
+
   Components Used: CharacterGallery
   Template Structure: The main page container wrapping the CharacterGallery component.
 
 ### CharacterGallery.vue:
+
   Components Used: CharacterCard
   
   Data Properties:
@@ -32,6 +34,7 @@
     beforeDestroy(): Removes the scroll event listener before the component is destroyed.
 
 ### CharacterCard.vue:
+
   Props: character: An object containing details of the character.
   
   Template Structure: A card layout displaying the character's image, name, status, creation date, and location.
@@ -41,6 +44,7 @@
   It ensures responsiveness across various screen sizes, adjusting the column count for the gallery based on the viewport width.
 
 ### Requirements Check:
+
 ✔️Utilize Vue, preferably version 3 "vue": "^3.3.4"
 ✔️Focus less on design but ensure it's responsive to various screen sizes: the code contains media queries that adjust the gallery's column count based on screen width.
 ✔️Styling using Tailwind CSS, pure CSS, SCSS, or SASS: The code uses pure CSS and SCSS for styling.

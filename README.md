@@ -55,6 +55,14 @@ The styling for the application is achieved using a mix of pure CSS and SCSS. Re
 - [x] Use the open API provided by [Rick and Morty API](https://rickandmortyapi.com/): Data is fetched from this API.
 - [x] Each gallery item displays thumbnail, name, status, creation time, and location.
 
+## Possible additions
+
+- [ ] Search and filter by characters, episodes, locations, statuses etc.
+- [ ] Pagination
+- [ ] Detailed character view
+- [ ] More social interactivity: account system, likes, fav selection etc.
+- [ ] Futher optimization tweaks
+  
 ## Installation Guide
 
 ### Prerequisites

@@ -1,4 +1,4 @@
-# Overview:
+<h2>Overview:<h2/>
   The Character Gallery Viewer is a Vue-based application designed to display characters from the Rick and Morty show. It fetches data from the open API provided by https://rickandmortyapi.com/ and showcases each character's thumbnail, name, status, creation time, and location. The gallery also implements an infinite scrolling feature, loading more characters as the user scrolls down.
 
 # Structure:
